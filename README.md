@@ -62,7 +62,7 @@ Most AI assistants just "give answers." But what's truly valuable isn't the answ
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/methodology-toolkit.git
+git clone https://github.com/yyr88110/methodology-toolkit.git
 
 # Copy skills to your Hermes skills directory
 cp -r methodology-toolkit/skills/methodology ~/.hermes/skills/
@@ -76,6 +76,44 @@ hermes skills list | grep methodology
 1. Copy the `skills/methodology/` directory to your agent's skills location
 2. Configure your agent to load skills from that directory
 3. The toolkit will automatically activate when relevant triggers are detected
+
+### Verification
+
+After installation, verify that all 7 skills are loaded:
+
+```bash
+# List all methodology skills
+hermes skills list | grep methodology
+
+# Expected output:
+# methodology-create
+# methodology-decide
+# methodology-diagnose
+# methodology-research
+# methodology-systems
+# methodology-toolkit
+# execution-discipline
+```
+
+To validate SKILL.md format:
+
+```bash
+# Run the validation script
+python3 scripts/validate_skills.py
+
+# Expected output:
+# 🔍 Found 7 SKILL.md files to validate
+# 
+# ✅ execution-discipline
+# ✅ methodology-create
+# ✅ methodology-decide
+# ✅ methodology-diagnose
+# ✅ methodology-research
+# ✅ methodology-systems
+# ✅ methodology-toolkit
+# 
+# ✅ All SKILL.md files passed validation!
+```
 
 ### Usage
 
