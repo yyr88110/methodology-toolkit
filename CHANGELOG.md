@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Comprehensive documentation and examples
 - GitHub Issue and PR templates
 - SKILL.md validation script
+- **Meta Toolkit** (9 tools): Meta-cognition, cognitive monitoring, learning strategy selection
 
 ### Changed
 - None

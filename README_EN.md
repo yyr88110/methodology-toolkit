@@ -1,18 +1,24 @@
----
-name: methodology-toolkit
-description: "52 thinking tools for AI agents — covering innovation, decision-making, diagnosis, research, systems thinking, and execution discipline. Transform AI from 'answering questions' to 'analyzing problems with structured methodology.'"
-version: 1.0.0
-author: Methodology Toolkit Contributors
-license: MIT
-metadata:
-  hermes:
-    tags: [methodology, thinking, decision-making, problem-solving, analysis]
-    related_skills: [methodology-create, methodology-decide, methodology-diagnose, methodology-research, methodology-systems, execution-discipline]
----
-
 # 🧠 Methodology Toolkit for AI Agents
 
 > **52 thinking tools that transform AI from "answering questions" to "analyzing problems with structured methodology."**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)](https://github.com/yyr88110/methodology-toolkit/releases)
+[![Hermes Agent](https://img.shields.io/badge/Hermes-Agent-blue.svg)](https://github.com/hermes-agent/hermes-agent)
+[![Tools](https://img.shields.io/badge/Tools-52-orange.svg)](#-whats-included)
+
+## 📑 Table of Contents
+
+- [🤔 What is this?](#-what-is-this)
+- [🎯 Who is this for?](#-who-is-this-for)
+- [📦 What's included?](#-whats-included)
+- [🚀 Quick Start](#-quick-start)
+- [📚 Detailed Documentation](#-detailed-documentation)
+- [🔧 Integration Guide](#-integration-guide)
+- [📖 Learning Resources](#-learning-resources)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
 
 ## 🤔 What is this?
 
@@ -37,7 +43,18 @@ Most AI assistants just "give answers." But what's truly valuable isn't the answ
 | **Research** | 1 | 5W1H structured analysis for external projects |
 | **Systems** | 13 | Analyzing complex situations, understanding organizations |
 | **Execute** | 9 | Execution discipline, task lifecycle, memory maintenance |
-| **Meta** | 9 | Meta-cognition, cognitive monitoring, learning strategy |
+
+### Quick Example
+
+**User asks:** "Should we use Tool A or Tool B?"
+
+**Without methodology toolkit:** AI gives a generic comparison.
+
+**With methodology toolkit:** AI naturally applies:
+- **Cost-benefit analysis** (Decide) — systematic comparison of inputs/outputs
+- **Opportunity cost** (Decide) — what do we give up by choosing each?
+- **Risk stratification** (Decide) — high-probability/low-loss vs low-probability/high-loss
+- **First principles** (Systems) — what are the fundamental constraints?
 
 ## 🚀 Quick Start
 
@@ -45,7 +62,7 @@ Most AI assistants just "give answers." But what's truly valuable isn't the answ
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/methodology-toolkit.git
+git clone https://github.com/yyr88110/methodology-toolkit.git
 
 # Copy skills to your Hermes skills directory
 cp -r methodology-toolkit/skills/methodology ~/.hermes/skills/
@@ -60,6 +77,57 @@ hermes skills list | grep methodology
 2. Configure your agent to load skills from that directory
 3. The toolkit will automatically activate when relevant triggers are detected
 
+### Verification
+
+After installation, verify that all 7 skills are loaded:
+
+```bash
+# List all methodology skills
+hermes skills list | grep methodology
+
+# Expected output:
+# methodology-create
+# methodology-decide
+# methodology-diagnose
+# methodology-research
+# methodology-systems
+# methodology-toolkit
+# execution-discipline
+```
+
+To validate SKILL.md format:
+
+```bash
+# Run the validation script
+python3 scripts/validate_skills.py
+
+# Expected output:
+# 🔍 Found 7 SKILL.md files to validate
+# 
+# ✅ execution-discipline
+# ✅ methodology-create
+# ✅ methodology-decide
+# ✅ methodology-diagnose
+# ✅ methodology-research
+# ✅ methodology-systems
+# ✅ methodology-toolkit
+# 
+# ✅ All SKILL.md files passed validation!
+```
+
+### Usage
+
+Once installed, the toolkit activates automatically when you ask questions that match the trigger patterns:
+
+| You say | Toolkit activates |
+|---------|-------------------|
+| "Help me analyze this problem" | Diagnose toolkit |
+| "Which option should I choose?" | Decide toolkit |
+| "What are some new approaches?" | Create toolkit |
+| "Is this project worth using?" | Research 5W1H |
+| "Why is this system designed this way?" | Systems toolkit |
+| "How should I start this task?" | Execute toolkit |
+
 ## 📚 Detailed Documentation
 
 ### Create Toolkit (12 tools)
@@ -72,13 +140,6 @@ hermes skills list | grep methodology
 - **Counterfactual Thinking** — What if key conditions changed?
 - **Problem Reframing** — Maybe the question itself is wrong
 - **Constraint-Driven Thinking** — Acknowledge boundaries, find optimal within them
-- **Falsifiability** — A claim that can't be disproven isn't scientific
-- **Testability** — Can we design observations to test this?
-- **Repeatability** — Does it hold under different conditions?
-- **Evidence Hierarchy** — Not all evidence is equal
-- **Underdetermination** — Same evidence can support multiple theories
-- **Background Assumption Unpacking** — Separate data from assumptions
-- **Prior-Posterior Distinction** — What did you believe before? How much did new evidence change it?
 
 ### Decide Toolkit (15 tools)
 
@@ -90,13 +151,6 @@ hermes skills list | grep methodology
 - **Expected Utility** — Probability × outcome, not just "most likely"
 - **Cost-Benefit Analysis** — Systematic comparison of inputs/outputs
 - **Opportunity Cost** — What do you give up by choosing this?
-- **Build vs Reuse** — Before building, check: platform built-in? community solution?
-- **Risk Stratification** — High-probability/low-loss vs low-probability/high-loss
-- **Minimax Regret** — When uncertain, avoid the outcome you'd regret most
-- **Bounded Rationality** — Perfect isn't possible; find "good enough"
-- **Satisficing** — Not optimal, but executable now
-- **Bayesian Updating** — Update beliefs with new evidence
-- **Fallibilism** — Conclusions can be strong but remain revisable
 
 ### Diagnose Toolkit (11 tools)
 
@@ -108,12 +162,6 @@ hermes skills list | grep methodology
 - **Necessary/Sufficient Conditions** — Is this required? Or just helpful?
 - **Category Analysis** — Fact vs value vs causal judgment
 - **Counterexample检验** — One strong counterexample can collapse a conclusion
-- **Fallacy Recognition** — Straw man, false dichotomy, survivorship bias...
-- **Cognitive Bias Correction** — Confirmation bias, anchoring, availability...
-- **5 Whys** — Keep asking why until you reach root cause
-- **Root Cause Analysis** — Formal method for engineering failures
-- **Fault Tree/Causal Chain** — Map all possible paths to failure
-- **Bottleneck Analysis** — Find the constraint that limits system output
 
 ### Research Toolkit (1 framework)
 
@@ -139,13 +187,6 @@ hermes skills list | grep methodology
 - **Feedback Loops** — Positive amplifies, negative stabilizes
 - **Non-linear Thinking** — Small inputs can have disproportionate effects
 - **Emergence** — Whole properties can't be predicted from parts
-- **Self-Organization** — Systems can form stable patterns without central control
-- **Level Analysis** — Individual, team, organization, institution
-- **Path Dependence** — Why systems are locked into historical choices
-- **Occam's Razor** — Prefer simpler explanations with fewer assumptions
-- **Explanatory Power** — Which theory explains more, deeper, handles anomalies better?
-- **Unification Principle** — One framework explaining multiple phenomena is powerful
-- **Mechanistic Explanation** — Not just "correlated" but "how it works"
 - **First Principles** — Break down to fundamental constraints, rebuild from there
 
 ### Execute Toolkit (9 modes)
@@ -157,11 +198,6 @@ hermes skills list | grep methodology
 - **Task Lifecycle** — Before starting: check old tasks, progress, quotas, dependencies
 - **Memory Maintenance** — Regular self-check: still accurate? Stored elsewhere? Long-term or temporary?
 - **File Design Standards** — New MD files get methodology constraints in header comments
-- **Progress Reporting** — Every 5 minutes during long operations, report status
-- **Redundancy Cleanup** — Report only, don't delete. Confirm with boss first.
-- **Cron Task Design** — Before creating: background, boundaries, side effects, failure modes
-- **Reliability-First Degradation** — Prefer most reliable solution, not most feature-rich
-- **Task-Level Business Constraints** — Each cron prompt starts with 3-5 iron laws
 
 ## 🔧 Integration Guide
 
