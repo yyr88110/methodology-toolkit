@@ -3,7 +3,22 @@
 > **52 thinking tools that transform AI from "answering questions" to "analyzing problems with structured methodology."**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/badge/Version-1.0.0-green.svg)](https://github.com/yyr88110/methodology-toolkit/releases)
 [![Hermes Agent](https://img.shields.io/badge/Hermes-Agent-blue.svg)](https://github.com/hermes-agent/hermes-agent)
+[![Tools](https://img.shields.io/badge/Tools-52-orange.svg)](#-whats-included)
+
+## 📑 Table of Contents
+
+- [🤔 What is this?](#-what-is-this)
+- [🎯 Who is this for?](#-who-is-this-for)
+- [📦 What's included?](#-whats-included)
+- [🚀 Quick Start](#-quick-start)
+- [📚 Detailed Documentation](#-detailed-documentation)
+- [🔧 Integration Guide](#-integration-guide)
+- [📖 Learning Resources](#-learning-resources)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
 
 ## 🤔 What is this?
 
