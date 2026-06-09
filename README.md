@@ -327,9 +327,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues** — [GitHub Issues](https://github.com/your-username/methodology-toolkit/issues)
-- **Discussions** — [GitHub Discussions](https://github.com/your-username/methodology-toolkit/discussions)
-- **Email** — your.email@example.com
+- **Issues** — [GitHub Issues](https://github.com/yyr88110/methodology-toolkit/issues)
+- **Discussions** — [GitHub Discussions](https://github.com/yyr88110/methodology-toolkit/discussions)
 
 ---
 
