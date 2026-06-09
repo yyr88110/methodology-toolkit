@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "💡 Tool Proposal"
+    url: https://github.com/yyr88110/methodology-toolkit/discussions/new?category=ideas
+    about: Suggest a new thinking tool for the toolkit
+  - name: "❓ Questions & Help"
+    url: https://github.com/yyr88110/methodology-toolkit/discussions/new?category=q-a
+    about: Ask questions about installation, usage, or integration
